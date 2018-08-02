@@ -1,0 +1,71 @@
+// *************************************
+//
+//   Settings
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Base Colors ----- //
+$base-background: #fff;
+$base-bl: #323234;
+$base-wh: #fff;
+$blue: #197ac6;
+$lightBlue: #e8f4fd;
+$orange: #ffab00;
+$base-link-color: #197ac6;
+
+// ----- Phase2 Colors ---- //
+$gold: #b6aa27;
+$silver: #9a9fa3;
+$bronze: #e7bc84;
+
+// ----- Base Content ----- //
+$base-fontFamily: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", "arial", "helvetica", sans-serif;
+$baseFont-size: 1.6rem;
+$base-lineHeight: 1.6;
+$hiragino: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro";
+$meirio: "メイリオ", "Meiryo";
+$ms: "ＭＳ Ｐゴシック", "MS PGothic";
+$roboto: "Roboto", sans-serif;
+
+// ----- Base Layout ----- //
+
+// ----- Content ----- //
+
+// ----- Layout ----- //
+$l-Width: 100%;
+$max-width: 1090px;
+
+@mixin inner() {
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    width: $l-Width;
+  }
+
+  @media screen and (min-width: 769px) {
+    max-width: $max-width;
+    min-width: $max-width;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4.3rem;
+  padding-right: 4.3rem;
+  width: $l-Width;
+}
+
+.is-pc {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.is-sp {
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
+}

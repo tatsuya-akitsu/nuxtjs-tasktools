@@ -1,0 +1,15 @@
+.main-box {
+  display: flex;
+  justify-content: space-between
+}
+
+.main-box--leftPanel,
+.main-box--rightPanel {
+  flex: 1;
+}
+
+.main-box--rightPanel {
+  .md-text--small {
+    padding: 1rem 0 0;
+  }
+}
