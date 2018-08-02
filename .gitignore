@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+sw.*
+
+# firebase
+.firebaserc
+database.rules.json
+firebase.json
+firestore.indexes.json
+firestore.rules
+storage.rules
