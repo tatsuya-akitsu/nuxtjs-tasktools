@@ -1,0 +1,102 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+html {
+  display: block;
+  font-size: 62.5% !important;
+}
+
+body {
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
+
+  background: $base-background;
+  color: $base-bl;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,;
+  font-size: $baseFont-size;
+  height: 100%;
+  line-height: $base-lineHeight;
+  margin: 0 auto;
+  overflow-scrolling: touch;
+  padding: 0;
+  width: 100%;
+}
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+a,
+button {
+  transition: all .3s linear;
+}
+
+select {
+  appearance: none;
+  background: none transparent;
+  border: 0;
+  border-radius: 0;
+  box-sizing: content-box;
+  color: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+img {
+  vertical-align: bottom;
+}
+
+input,
+label,
+select,
+textarea {
+  vertical-align: middle;
+}
+
+//ボタンのデフォルトcssリセット
+button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
